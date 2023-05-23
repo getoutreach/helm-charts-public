@@ -4,19 +4,19 @@ entries:
   - apiVersion: v2
     appVersion: 10.11.3
     created: "2023-05-23T08:15:36.209034-07:00"
-    description: A Helm chart for MariaDB on Kubernetes
+    description: A Helm chart for MariaDB on Kubernetes. It contains modifications as per this PR - https://github.com/groundhog2k/helm-charts/pull/1241
     digest: ab315a4d42d9daf7ca3f3600aa9e8f4e0e38e0d165d9bb62fa7bf331820f5d6b
     maintainers:
     - name: groundhog2k
     name: mariadb
     type: application
     urls:
-    - https://getoutreach.github.io/helm-charts-public/mariadb-0.8.4.tgz
-    version: 0.8.4
+    - https://getoutreach.github.io/helm-charts-public/mariadb-0.8.4-subpath.tgz
+    version: 0.8.4-subpath
   - apiVersion: v2
     appVersion: 10.5.10
     created: "2023-05-23T08:15:36.20839-07:00"
-    description: A Helm chart for MariaDB on Kubernetes
+    description: A Helm chart for MariaDB on Kubernetes.
     digest: 0ecbe3c8fe8cc6d496196ce7befb2ae922c5e96ee7bf4f304a67d54f77aeb236
     maintainers:
     - name: groundhog2k
