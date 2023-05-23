@@ -1,33 +1,21 @@
 apiVersion: v1
 entries:
-  couchdb:
-  - apiVersion: v1
-    appVersion: 2.3.1
-    created: "2021-07-14T16:15:07.305574-07:00"
-    description: A database featuring seamless multi-master sync, that scales from
-      big data to mobile, with an intuitive HTTP/JSON API and designed for reliability.
-    digest: 8cf9e11cc7f1ef4441ce3880dd3dd6f2cecf04344004a718a528a6d37f2eb82f
-    home: https://couchdb.apache.org/
-    icon: http://couchdb.apache.org/CouchDB-visual-identity/logo/CouchDB-couch-symbol.svg
-    keywords:
-    - couchdb
-    - database
-    - nosql
-    maintainers:
-    - email: kocolosk@apache.org
-      name: kocolosk
-    - email: willholley@apache.org
-      name: willholley
-    name: couchdb
-    sources:
-    - https://github.com/apache/couchdb-docker
-    urls:
-    - https://getoutreach.github.io/helm-charts-public/couchdb-3.3.3-outreach.tgz
-    version: 3.3.3-outreach
   mariadb:
   - apiVersion: v2
+    appVersion: 10.11.3
+    created: "2023-05-23T08:15:36.209034-07:00"
+    description: A Helm chart for MariaDB on Kubernetes
+    digest: ab315a4d42d9daf7ca3f3600aa9e8f4e0e38e0d165d9bb62fa7bf331820f5d6b
+    maintainers:
+    - name: groundhog2k
+    name: mariadb
+    type: application
+    urls:
+    - https://getoutreach.github.io/helm-charts-public/mariadb-0.8.4.tgz
+    version: 0.8.4
+  - apiVersion: v2
     appVersion: 10.5.10
-    created: "2021-07-14T16:15:07.306169-07:00"
+    created: "2023-05-23T08:15:36.20839-07:00"
     description: A Helm chart for MariaDB on Kubernetes
     digest: 0ecbe3c8fe8cc6d496196ce7befb2ae922c5e96ee7bf4f304a67d54f77aeb236
     maintainers:
@@ -40,7 +28,7 @@ entries:
   rabbitmq:
   - apiVersion: v2
     appVersion: 3.8.18
-    created: "2021-07-14T16:15:07.306875-07:00"
+    created: "2023-05-23T08:15:36.209878-07:00"
     description: A Helm chart for a RabbitMQ cluster on Kubernetes
     digest: 77df40369ced363b2220430231e3e30d3e51f4fdaf6459fe8e8f71d4a008c33e
     maintainers:
@@ -50,19 +38,4 @@ entries:
     urls:
     - https://getoutreach.github.io/helm-charts-public/rabbitmq-0.3.1.tgz
     version: 0.3.1
-  vault-secrets-operator:
-  - apiVersion: v1
-    appVersion: 1.14.5
-    created: "2021-07-14T16:15:07.307367-07:00"
-    description: Create Kubernetes secrets from Vault for a secure GitOps based workflow.
-    digest: 736e19e932e5dc078e2adba5df3cd612308430ce6792977e4b2d4aa51924d1f3
-    home: https://github.com/ricoberger/vault-secrets-operator
-    icon: https://raw.githubusercontent.com/ricoberger/vault-secrets-operator/master/assets/logo.png
-    maintainers:
-    - name: Rico Berger
-      url: https://ricoberger.de
-    name: vault-secrets-operator
-    urls:
-    - https://getoutreach.github.io/helm-charts-public/vault-secrets-operator-1.14.5.tgz
-    version: 1.14.5
-generated: "2021-07-14T16:15:07.304691-07:00"
+generated: "2023-05-23T08:15:36.207548-07:00"
