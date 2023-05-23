@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Updates the 'index.yaml' in the root of the repository.
+set -euo pipefail
 SCRIPTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 REPO_DIR="$(cd "${SCRIPTS_DIR}/.." >/dev/null 2>&1 && pwd)"
 if ! command -v helm @ >/dev/null; then
