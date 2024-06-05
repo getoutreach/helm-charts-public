@@ -9,6 +9,17 @@ This repository stores helm charts that can be fetched via Github pages. This is
  3. Run `./scripts/update-index.sh`
  4. Create a PR and merge it.
 
+
+### RabbitMQ
+
+E.g. to get a new version of RabbitMQ
+
+1. get chart: `gh repo clone bitnami/charts`
+2. `cd charts/bitnami && helm package -u charts/bitnami/rabbitmq`
+3. ./scripts/update-index.sh
+
+
 ## License
 
 Apache-2.0
+
