@@ -3,8 +3,8 @@ entries:
   mariadb:
   - apiVersion: v2
     appVersion: 10.11.3
-    created: "2023-05-23T08:15:36.209034-07:00"
-    description: A Helm chart for MariaDB on Kubernetes. It contains modifications as per this PR - https://github.com/groundhog2k/helm-charts/pull/1241
+    created: "2024-06-05T14:49:43.177129-07:00"
+    description: A Helm chart for MariaDB on Kubernetes
     digest: ab315a4d42d9daf7ca3f3600aa9e8f4e0e38e0d165d9bb62fa7bf331820f5d6b
     maintainers:
     - name: groundhog2k
@@ -12,11 +12,11 @@ entries:
     type: application
     urls:
     - https://getoutreach.github.io/helm-charts-public/mariadb-0.8.4-subpath.tgz
-    version: 0.8.4-subpath
+    version: 0.8.4
   - apiVersion: v2
     appVersion: 10.5.10
-    created: "2023-05-23T08:15:36.20839-07:00"
-    description: A Helm chart for MariaDB on Kubernetes.
+    created: "2024-06-05T14:49:43.176498-07:00"
+    description: A Helm chart for MariaDB on Kubernetes
     digest: 0ecbe3c8fe8cc6d496196ce7befb2ae922c5e96ee7bf4f304a67d54f77aeb236
     maintainers:
     - name: groundhog2k
@@ -38,7 +38,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.0.36
-    created: "2024-02-09T15:07:56.969910632-08:00"
+    created: "2024-06-05T14:49:43.182036-07:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -67,9 +67,45 @@ entries:
     - https://getoutreach.github.io/helm-charts-public/mysql-9.19.1.tgz
     version: 9.19.1
   rabbitmq:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r22
+        - name: rabbitmq
+          image: docker.io/bitnami/rabbitmq:3.13.3-debian-12-r0
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 3.13.3
+    created: "2024-06-05T14:49:43.186017-07:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: RabbitMQ is an open source general-purpose message broker that is
+      designed for consistent, highly-available messaging scenarios (both synchronous
+      and asynchronous).
+    digest: 19a4e17ba5daa2becf0aa466a503cbd74cb631cfe0d9ce47973bfa5dc63e8aae
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - message queue
+    - AMQP
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: rabbitmq
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/rabbitmq
+    urls:
+    - https://getoutreach.github.io/helm-charts-public/rabbitmq-14.3.3.tgz
+    version: 14.3.3
   - apiVersion: v2
     appVersion: 3.8.18
-    created: "2023-05-23T08:15:36.209878-07:00"
+    created: "2024-06-05T14:49:43.182763-07:00"
     description: A Helm chart for a RabbitMQ cluster on Kubernetes
     digest: 77df40369ced363b2220430231e3e30d3e51f4fdaf6459fe8e8f71d4a008c33e
     maintainers:
@@ -79,4 +115,4 @@ entries:
     urls:
     - https://getoutreach.github.io/helm-charts-public/rabbitmq-0.3.1.tgz
     version: 0.3.1
-generated: "2024-02-09T15:07:56.963960107-08:00"
+generated: "2024-06-05T14:49:43.175827-07:00"
